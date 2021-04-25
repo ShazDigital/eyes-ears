@@ -1,5 +1,5 @@
 import * as React from "react";
-import styles, { backgroundDotStyles } from "./index.styles";
+import styles, { backgroundDotStyles } from "../components/index.styles";
 import "normalize.css";
 
 // markup

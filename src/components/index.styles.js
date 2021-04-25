@@ -47,6 +47,8 @@ const styles = css`
   }
 `;
 
+export default styles;
+
 export const backgroundDotStyles = css`
   background-image: radial-gradient(#ca8e49 10%, #db9a4e 10%);
   background-position: 0 0;
@@ -58,5 +60,3 @@ export const backgroundDotStyles = css`
   left: 0;
   z-index: -1;
 `;
-
-export default styles;
