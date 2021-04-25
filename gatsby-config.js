@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "eyes-ears",
+    title: "eyes-ears"
   },
   plugins: [
     "gatsby-plugin-emotion",
@@ -9,8 +9,17 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
-      },
+        icon: "src/images/icon.png"
+      }
     },
-  ],
+    {
+      resolve: `gatsby-plugin-web-font-loader`,
+      options: {
+        custom: {
+          families: [`Whyte`, `Bogue`],
+          urls: [`/fonts/fonts.css`]
+        }
+      }
+    }
+  ]
 };
