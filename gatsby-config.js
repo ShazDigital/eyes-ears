@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "eyes-ears",
-    siteUrl: "https://eyes-ears.herokuapp.com/"
+    siteUrl: "https://eyes-n-ears.com/"
   },
   plugins: [
     "gatsby-plugin-emotion",
