@@ -32,6 +32,7 @@ const styles = css`
 
   img {
     max-width: 100%;
+    display: block;
   }
 
   .logo {
@@ -48,15 +49,3 @@ const styles = css`
 `;
 
 export default styles;
-
-export const backgroundDotStyles = css`
-  background-image: radial-gradient(#ca8e49 10%, #db9a4e 10%);
-  background-position: 0 0;
-  background-size: 60px 60px;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-`;
