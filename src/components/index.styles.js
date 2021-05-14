@@ -30,6 +30,28 @@ const styles = css`
     }
   }
 
+  .img-container {
+    display: flex;
+  }
+
+  .img-left {
+    width: 33.3%;
+  }
+
+  .img-right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 66.6%;
+    justify-content: space-evenly;
+  }
+
+  .touch-img,
+  .are-img {
+    width: auto;
+    height: 392px;
+  }
+
   img {
     max-width: 100%;
     display: block;
