@@ -7,6 +7,9 @@ const styles = css`
   font-size: 22px;
   color: #162c29;
   padding: 0 16px;
+  * {
+    box-sizing: border-box;
+  }
 
   h1 {
     font-family: "Bogue-Black", Garamond, Baskerville, sans-serif;
@@ -30,31 +33,57 @@ const styles = css`
     }
   }
 
+  .MuiContainer-root {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   .img-container {
     display: flex;
   }
 
   .img-left {
-    width: 33.3%;
+    width: 34%;
+    margin-right: 50px;
+    img {
+      height: 100%;
+    }
   }
 
   .img-right {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 66.6%;
-    justify-content: space-evenly;
+    width: 66%;
+    justify-content: flex-start;
   }
 
   .touch-img,
   .are-img {
-    width: auto;
-    height: 392px;
+    max-height: 370px;
+  }
+
+  .are-img {
+    width: 43%;
+    margin-left: 3%;
+  }
+
+  .touch-img {
+    width: 51%;
+    margin-right: 3%;
+  }
+
+  .soon-img {
+    max-height: 309px;
+    margin-top: 50px;
+  }
+
+  .pulse-radar-imgs {
   }
 
   img {
-    max-width: 100%;
     display: block;
+    width: 100%;
   }
 
   .logo {
