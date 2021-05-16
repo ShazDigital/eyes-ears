@@ -7,55 +7,73 @@ const styles = css`
   font-size: 22px;
   color: #162c29;
   padding: 0 16px;
+  background-color: #f5e8e1;
   * {
     box-sizing: border-box;
   }
 
-  h1 {
-    font-family: "Bogue-Black", Garamond, Baskerville, sans-serif;
-    font-size: 50px;
-    color: white;
-    font-size: 52px;
-    margin: 0;
-    padding-top: 110px;
-    @media (min-width: 768px) {
-      font-size: 72px;
-    }
+  .hide {
+    text-indent: -9999px;
+    margin-top: 148px;
+  }
+
+  .eyes-arrow {
+    max-width: 168px;
+  }
+
+  .upper-container {
+    padding-top: 336px;
   }
 
   h2 {
-    font-family: "Bogue-Extrabold", Garamond, Baskerville, sans-serif;
-    color: #ffe8e1;
-    font-size: 30px;
-    margin-top: 45px;
-    @media (min-width: 768px) {
-      font-size: 100px;
+    max-width: 1000px;
+    font-size: 36px;
+    margin: 100px auto 100px;
+    span {
+      font-family: "Bogue-Bold", Garamond, Baskerville, sans-serif;
     }
   }
 
   .MuiContainer-root {
-    padding-left: 40px;
-    padding-right: 40px;
+    @media (min-width: 960px) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
   }
 
   .img-container {
     display: flex;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
   }
 
   .img-left {
-    width: 34%;
-    margin-right: 50px;
+    width: 100%;
+    @media (min-width: 768px) {
+      width: 34%;
+      margin-right: 50px;
+    }
     img {
       height: 100%;
     }
   }
 
   .img-right {
+    width: 100%;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 66%;
-    justify-content: flex-start;
+    @media (min-width: 768px) {
+      width: 66%;
+      justify-content: flex-start;
+      margin-top: 0;
+    }
   }
 
   .touch-img,
@@ -79,23 +97,27 @@ const styles = css`
   }
 
   .pulse-radar-imgs {
-  }
-
-  img {
-    display: block;
-    width: 100%;
-  }
-
-  .logo {
-    margin-top: 70px;
-    @media (min-width: 768px) {
-      margin-top: 140px;
+    img {
+      margin-top: 50px;
+      max-width: 100%;
     }
   }
 
+  .logo {
+    max-width: 235px;
+    ${"" /* margin-top: 70px;
+    @media (min-width: 768px) {
+      margin-top: 140px;
+    } */}
+  }
+
+  .footer {
+    padding-bottom: 40px;
+  }
+
   .footer-logo {
-    margin-top: 150px;
-    margin-bottom: 70px;
+    margin-top: 65px;
+    margin-bottom: 15px;
   }
 `;
 
