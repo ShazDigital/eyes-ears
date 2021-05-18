@@ -43,6 +43,7 @@ const styles = css`
 
   .img-container {
     display: flex;
+    align-items: start;
     @media (max-width: 768px) {
       flex-direction: column;
     }
@@ -55,8 +56,7 @@ const styles = css`
   .img-left {
     width: 100%;
     @media (min-width: 768px) {
-      width: 34%;
-      margin-right: 50px;
+      width: 35.25%;
     }
     img {
       height: 100%;
@@ -69,31 +69,68 @@ const styles = css`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     @media (min-width: 768px) {
       width: 66%;
-      justify-content: flex-start;
       margin-top: 0;
+      padding-left: 50px;
     }
+  }
+
+  .text-in-img {
+    position: absolute;
+    font-family: "Whyte-Inktrap", Helvetica, sans-serif;
+  }
+
+  .touch-text {
+    text-transform: uppercase;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+  }
+
+  .are-text {
+    font-size: 48px;
+    left: 0;
+    width: 100%;
+    @media (min-width: 768px) {
+      font-size: 3.65vw;
+    }
+  }
+
+  .bogue-text {
+    position: absolute;
+    font-family: "Bogue-Bold", Garamond, Baskerville, sans-serif;
+    margin: 35px 0 0;
+    font-size: 54px;
+    width: 100%;
   }
 
   .touch-img,
   .are-img {
     max-height: 370px;
+    position: relative;
   }
 
   .are-img {
-    width: 43%;
-    margin-left: 3%;
+    width: 43.5%;
   }
 
   .touch-img {
-    width: 51%;
-    margin-right: 3%;
+    width: 50.5%;
   }
 
   .soon-img {
     max-height: 309px;
-    margin-top: 50px;
+    margin-top: 40px;
+    position: relative;
+  }
+
+  .pulse-img {
+    position: relative;
+    p {
+      top: 50px;
+    }
   }
 
   .pulse-radar-imgs {
@@ -103,12 +140,21 @@ const styles = css`
     }
   }
 
+  .purple-img-container {
+    position: relative;
+    font-size: 4vw;
+  }
+
+  .purple-text {
+    width: 100%;
+  }
+
+  .radar {
+    font-family: "Bogue-Bold", Garamond, Baskerville, sans-serif;
+  }
+
   .logo {
     max-width: 235px;
-    ${"" /* margin-top: 70px;
-    @media (min-width: 768px) {
-      margin-top: 140px;
-    } */}
   }
 
   .footer {

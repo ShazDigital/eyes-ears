@@ -21,22 +21,36 @@ const IndexPage = () => {
       </Container>
       <Container maxWidth="lg" className="img-container">
         <div className="img-left">
-          <img src={`images/jobnames.png`} />
+          <img src={`images/jobs-no-word.svg`} />
         </div>
         <div className="img-right">
           <div className="touch-img">
-            <img src={`images/getInTouchPng.png`} />
+            <p className="text-in-img touch-text">Get in touch</p>
+            <img src={`images/star_box.png`} />
           </div>
           <div className="are-img">
-            <img src={`images/wearepng.png`} />
+            <p className="text-in-img are-text">Who we are</p>
+            <img src={`images/weare-noword.svg`} />
           </div>
-          <img src={`images/soon.png`} className="soon-img" />
+          <div className="soon-img">
+            <p className="bogue-text">Coming Soon</p>
+            <img src={`images/soon-no-word.svg`} />
+          </div>
         </div>
       </Container>
       <Container maxWidth="lg" className="footer">
         <div className="pulse-radar-imgs">
-          <img src={`images/pulse.svg`} />
-          <img src={`images/radar.svg`} />
+          <div className="pulse-img">
+            <p className="bogue-text">A finger on the pulse</p>
+            <img src={`images/orange.svg`} />
+          </div>
+          <div className="purple-img-container">
+            <p className="purple-text text-in-img">
+              An <span className="radar">under-the-radar</span> idea brought to
+              you by
+            </p>
+            <img src={`images/purple.svg`} />
+          </div>
         </div>
         <Grid container direction="row" justify="center" alignItems="center">
           <Grid item xs={12}>
