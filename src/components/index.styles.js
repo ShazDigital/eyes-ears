@@ -3,7 +3,7 @@ import { css } from "@emotion/react";
 const styles = css`
   position: relative;
   text-align: center;
-  font-family: "Whyte", Helvetica, sans-serif;
+  font-family: "Whyte-Inktrap", Helvetica, sans-serif;
   font-size: 22px;
   color: #162c29;
   padding: 0 16px;
@@ -12,13 +12,15 @@ const styles = css`
     box-sizing: border-box;
   }
 
-  .hide {
-    text-indent: -9999px;
-    margin-top: 148px;
+  .eyes-header {
+    margin-top: 165px;
+    text-transform: uppercase;
+    margin-bottom: 85px;
+    font-size: 30px;
   }
 
   .eyes-arrow {
-    max-width: 168px;
+    max-width: 45px;
   }
 
   .upper-container {
@@ -44,8 +46,9 @@ const styles = css`
   .img-container {
     display: flex;
     align-items: start;
-    @media (max-width: 768px) {
-      flex-direction: column;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      flex-direction: row;
     }
     img {
       display: block;
@@ -84,13 +87,19 @@ const styles = css`
 
   .touch-text {
     text-transform: uppercase;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%, -50%) rotate(-15deg);
+    transform: translate(-50%, -50%) rotate(-26deg);
+    font-size: 6vw;
+    left: 48%;
+    top: 36%;
+    @media (min-width: 768px) {
+      font-size: 41px;
+      left: 50%;
+      top: 40%;
+    }
   }
 
   .are-text {
-    font-size: 48px;
+    font-size: 6vw;
     left: 0;
     width: 100%;
     @media (min-width: 768px) {
@@ -101,9 +110,12 @@ const styles = css`
   .bogue-text {
     position: absolute;
     font-family: "Bogue-Bold", Garamond, Baskerville, sans-serif;
-    margin: 35px 0 0;
-    font-size: 54px;
+    margin: 4% 0 0;
+    font-size: 6vw;
     width: 100%;
+    @media (min-width: 768px) {
+      font-size: 54px;
+    }
   }
 
   .touch-img,
@@ -129,7 +141,7 @@ const styles = css`
   .pulse-img {
     position: relative;
     p {
-      top: 50px;
+      top: 49px;
     }
   }
 
@@ -146,7 +158,37 @@ const styles = css`
   }
 
   .purple-text {
-    width: 100%;
+    p {
+      text-transform: uppercase;
+      margin-top: 0;
+      top: 40%;
+      width: 100%;
+      font-size: 5.25vw;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      padding: 0 20px;
+      @media (min-width: 768px) {
+        ${"" /* top: 265px; */}
+        font-size: 40px;
+        max-width: 70%;
+      }
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      background: url("../images/arrow-down.png");
+      width: 24px;
+      height: 40px;
+      background-size: cover;
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      margin-left: -12px;
+      @media (min-width: 768px) {
+        top: 80%;
+      }
+    }
   }
 
   .radar {

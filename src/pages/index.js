@@ -10,8 +10,8 @@ const IndexPage = () => {
         <Grid container direction="row" justify="center" alignItems="center">
           <Grid item xs={12}>
             <img className="logo" src={`images/eyes-ears.svg`} />
-            <h1 className="hide">Eyes & Ears</h1>
-            <img className="eyes-arrow" src={`images/eyes-ears-arrow.svg`} />
+            <h1 className="eyes-header">Eyes &amp; Ears</h1>
+            <img className="eyes-arrow" src={`images/arrow-down.png`} />
             <h2>
               An <span>experimental new concept </span> we are exploring that
               approaches the talent/recruiting game a bit differently
@@ -45,10 +45,13 @@ const IndexPage = () => {
             <img src={`images/orange.svg`} />
           </div>
           <div className="purple-img-container">
-            <p className="purple-text text-in-img">
-              An <span className="radar">under-the-radar</span> idea brought to
-              you by
-            </p>
+            <div className="purple-text">
+              <p className="text-in-img">
+                An <span className="radar">under-the-radar</span> idea brought
+                to you by
+              </p>
+              {/* <img className="arrow" src={`images/arrow-down.png`} /> */}
+            </div>
             <img src={`images/purple.svg`} />
           </div>
         </div>
