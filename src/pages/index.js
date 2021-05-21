@@ -22,6 +22,11 @@ const IndexPage = () => {
       <Container maxWidth="lg" className="img-container">
         <div className="img-left">
           <img src={`images/jobs-no-word.svg`} />
+          <p className="job-word cd">Creative Directors</p>
+          <p className="job-word des">Designers</p>
+          <p className="job-word pr">Producers</p>
+          <p className="job-word dev">Developers</p>
+          <p className="job-word ux">User Experience</p>
         </div>
         <div className="img-right">
           <div className="touch-img">

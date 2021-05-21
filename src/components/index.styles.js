@@ -58,12 +58,57 @@ const styles = css`
 
   .img-left {
     width: 100%;
+    position: relative;
+    overflow: hidden;
     @media (min-width: 768px) {
       width: 35.25%;
     }
     img {
       height: 100%;
     }
+  }
+
+  .job-word {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    white-space: nowrap;
+    margin: 0;
+    @media (min-width: 767px) {
+      font-size: 4.35vw;
+    }
+    @media (min-width: 1300px) {
+      font-size: 55px;
+    }
+  }
+
+  .cd {
+    top: 29%;
+    left: 8%;
+    transform: rotate(66.36deg);
+  }
+
+  .des {
+    top: 28%;
+    left: -4%;
+    transform: rotate(-47.31deg);
+  }
+
+  .pr {
+    top: 53%;
+    left: 17%;
+    transform: rotate(18.13deg);
+  }
+
+  .dev {
+    top: 75%;
+    left: -7%;
+    transform: rotate(-32.51deg);
+  }
+
+  .ux {
+    top: 83.5%;
+    transform: rotate(-21.52deg);
   }
 
   .img-right {
