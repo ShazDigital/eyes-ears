@@ -138,8 +138,8 @@ const styles = css`
     top: 36%;
     @media (min-width: 768px) {
       font-size: 41px;
-      left: 50%;
-      top: 40%;
+      left: 49%;
+      top: 34%;
     }
   }
 
@@ -149,6 +149,9 @@ const styles = css`
     width: 100%;
     @media (min-width: 768px) {
       font-size: 3.65vw;
+    }
+    @media (min-width: 1200px) {
+      font-size: 48px;
     }
   }
 
