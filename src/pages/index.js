@@ -62,10 +62,12 @@ const IndexPage = () => {
         </div>
         <Grid container direction="row" justify="center" alignItems="center">
           <Grid item xs={12}>
-            <img
-              className="footer-logo"
-              src={`images/supply-footer-logo.svg`}
-            />
+            <a href="thesupply.com" rel="noopener">
+              <img
+                className="footer-logo"
+                src={`images/supply-footer-logo.svg`}
+              />
+            </a>
           </Grid>
           <Grid item xs={12}>
             <img src={`images/star.svg`} />

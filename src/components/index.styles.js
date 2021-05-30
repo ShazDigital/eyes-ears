@@ -13,24 +13,24 @@ const styles = css`
   }
 
   .eyes-header {
-    margin-top: 165px;
+    margin-top: 55px;
     text-transform: uppercase;
-    margin-bottom: 85px;
-    font-size: 30px;
+    margin-bottom: 25px;
+    font-size: 25px;
   }
 
   .eyes-arrow {
-    max-width: 45px;
+    max-width: 32px;
   }
 
   .upper-container {
-    padding-top: 336px;
+    padding-top: 96px;
   }
 
   h2 {
     max-width: 1000px;
     font-size: 36px;
-    margin: 100px auto 100px;
+    margin: 75px auto 75px;
     span {
       font-family: "Bogue-Bold", Garamond, Baskerville, sans-serif;
     }
@@ -244,7 +244,7 @@ const styles = css`
   }
 
   .logo {
-    max-width: 235px;
+    max-width: 180px;
   }
 
   .footer {
