@@ -1,9 +1,9 @@
-import { css } from "@emotion/react";
+import { css } from '@emotion/react'
 
 const styles = css`
   position: relative;
   text-align: center;
-  font-family: "Whyte-Inktrap", Helvetica, sans-serif;
+  font-family: 'Whyte-Inktrap', Helvetica, sans-serif;
   font-size: 22px;
   color: #162c29;
   padding: 0 16px;
@@ -32,7 +32,7 @@ const styles = css`
     font-size: 36px;
     margin: 75px auto 75px;
     span {
-      font-family: "Bogue-Bold", Garamond, Baskerville, sans-serif;
+      font-family: 'Bogue-Bold', Garamond, Baskerville, sans-serif;
     }
   }
 
@@ -127,7 +127,7 @@ const styles = css`
 
   .text-in-img {
     position: absolute;
-    font-family: "Whyte-Inktrap", Helvetica, sans-serif;
+    font-family: 'Whyte-Inktrap', Helvetica, sans-serif;
   }
 
   .touch-text {
@@ -147,6 +147,7 @@ const styles = css`
     font-size: 6vw;
     left: 0;
     width: 100%;
+
     @media (min-width: 768px) {
       font-size: 3.65vw;
     }
@@ -157,7 +158,7 @@ const styles = css`
 
   .bogue-text {
     position: absolute;
-    font-family: "Bogue-Bold", Garamond, Baskerville, sans-serif;
+    font-family: 'Bogue-Bold', Garamond, Baskerville, sans-serif;
     margin: 4% 0 0;
     font-size: 6vw;
     width: 100%;
@@ -184,6 +185,7 @@ const styles = css`
     max-height: 309px;
     margin-top: 40px;
     position: relative;
+    overflow: hidden;
   }
 
   .pulse-img {
@@ -216,16 +218,16 @@ const styles = css`
       transform: translateX(-50%);
       padding: 0 20px;
       @media (min-width: 768px) {
-        ${"" /* top: 265px; */}
+        ${'' /* top: 265px; */}
         font-size: 40px;
         max-width: 70%;
       }
     }
 
     &:after {
-      content: "";
+      content: '';
       display: block;
-      background: url("../images/arrow-down.png");
+      background: url('../images/arrow-down.png');
       width: 24px;
       height: 40px;
       background-size: cover;
@@ -240,7 +242,7 @@ const styles = css`
   }
 
   .radar {
-    font-family: "Bogue-Bold", Garamond, Baskerville, sans-serif;
+    font-family: 'Bogue-Bold', Garamond, Baskerville, sans-serif;
   }
 
   .logo {
@@ -255,6 +257,6 @@ const styles = css`
     margin-top: 65px;
     margin-bottom: 15px;
   }
-`;
+`
 
-export default styles;
+export default styles
