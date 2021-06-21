@@ -8,6 +8,7 @@ import GetInTouch from '../components/GetInTouch/GetInTouch'
 import WhoWeAre from '../components/WhoWeAre/WhoWeAre'
 import { gsap } from 'gsap'
 import { SplitText } from 'gsap/SplitText'
+import JobWord from '../components/JobWord/JobWord'
 
 const IndexPage = () => {
   useEffect(() => {
@@ -29,14 +30,7 @@ const IndexPage = () => {
         </Grid>
       </Container>
       <Container maxWidth="lg" className="img-container">
-        <div className="img-left">
-          <img alt="" src={`images/jobs-no-word.svg`} />
-          <p className="job-word cd">Creative Directors</p>
-          <p className="job-word des">Designers</p>
-          <p className="job-word pr">Producers</p>
-          <p className="job-word dev">Developers</p>
-          <p className="job-word ux">User Experience</p>
-        </div>
+        <JobWord />
         <div className="img-right">
           <GetInTouch />
           <WhoWeAre />

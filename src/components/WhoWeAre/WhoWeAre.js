@@ -36,9 +36,9 @@ const StyledSVG = styled.svg`
 
   path {
     transition: fill 0.45s;
-    fill: ${(props) => (props.active ? 'white' : 'black')};
-    stroke: ${(props) => (props.active ? 'black' : 'none')};
-    stroke-width: 3;
+    /* fill: ${(props) => (props.active ? 'white' : 'black')}; */
+    stroke: ${(props) => (props.active ? 'white' : 'none')};
+    stroke-width: 1;
   }
 `
 

@@ -66,6 +66,13 @@ const styles = css`
     img {
       height: 100%;
     }
+    canvas {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+    }
   }
 
   .job-word {
@@ -74,6 +81,7 @@ const styles = css`
     font-size: 2.8rem;
     white-space: nowrap;
     margin: 0;
+    overflow-y: hidden;
     @media (min-width: 767px) {
       font-size: 4.35vw;
     }
@@ -84,20 +92,20 @@ const styles = css`
 
   .cd {
     top: 29%;
-    left: 8%;
-    transform: rotate(66.36deg);
+    left: 29%;
+    transform: rotate(66.36deg) translateX(-31px);
   }
 
   .des {
     top: 28%;
-    left: -4%;
+    left: -14%;
     transform: rotate(-47.31deg);
   }
 
   .pr {
     top: 53%;
     left: 17%;
-    transform: rotate(18.13deg);
+    transform: rotate(18.13deg) translateX(-60px);
   }
 
   .dev {
@@ -137,7 +145,7 @@ const styles = css`
     left: 48%;
     top: 36%;
     @media (min-width: 768px) {
-      font-size: 41px;
+      font-size: 3vw;
       left: 49%;
       top: 34%;
     }
