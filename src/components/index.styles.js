@@ -93,19 +93,19 @@ const styles = css`
   .cd {
     top: 29%;
     left: 29%;
-    transform: rotate(66.36deg) translateX(-31px);
+    transform: rotate(66.36deg) translateX(-35px);
   }
 
   .des {
-    top: 28%;
-    left: -14%;
-    transform: rotate(-47.31deg);
+    top: 27%;
+    left: -22%;
+    transform: rotate(-47.31deg) translateX(70px);
   }
 
   .pr {
-    top: 53%;
-    left: 17%;
-    transform: rotate(18.13deg) translateX(-60px);
+    top: 48%;
+    left: 0%;
+    transform: rotate(18.13deg);
   }
 
   .dev {

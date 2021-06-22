@@ -105,7 +105,7 @@ const WhoWeAre = () => {
       onMouseLeave={() => setActive(false)}
     >
       <p ref={textRef} className="text-in-img are-text">
-        Who we are
+        Be Patient
       </p>
       <p ref={wtfRef} className="text-in-img are-text">
         WTF?

@@ -21,6 +21,7 @@ function delay(ms) {
 const JobWord = () => {
   const shapesRef = useRef(null)
   const wrapperRef = useRef(null)
+
   useEffect(() => {
     async function runMatter() {
       await delay(500)
@@ -199,19 +200,19 @@ const JobWord = () => {
     <div className="img-left" ref={shapesRef}>
       <img alt="" src={`images/jobs-blank.svg`} ref={wrapperRef} />
       <StyledShapes className="shapes"></StyledShapes>
-      <Marquee gradient={false} className="job-word cd">
+      <Marquee play={true} gradient={false} className="job-word cd">
         Creative Directors &nbsp;
       </Marquee>
-      <Marquee gradient={false} className="job-word des">
+      <Marquee play={true} gradient={false} className="job-word des">
         Designers
       </Marquee>
-      <Marquee gradient={false} className="job-word pr">
+      <Marquee play={true} gradient={false} className="job-word pr">
         Producers
       </Marquee>
-      <Marquee speed={30} gradient={false} className="job-word dev">
+      <Marquee play={true} speed={30} gradient={false} className="job-word dev">
         Developers
       </Marquee>
-      <Marquee speed={30} gradient={false} className="job-word ux">
+      <Marquee play={true} speed={30} gradient={false} className="job-word ux">
         User Experience &nbsp;
       </Marquee>
     </div>
