@@ -47,6 +47,7 @@ const SineWave = ({ active }) => {
         left: '50%',
         transform: 'translateX(-50%)',
         margin: '0 auto',
+        transition: 'all 0.25s',
       }}
       ref={svgRef}
       viewBox="0 0 730 102"
@@ -54,10 +55,11 @@ const SineWave = ({ active }) => {
       <polyline
         ref={lineRef}
         stroke={'black'}
-        fill="none"
+        fill={active ? '#bb9cfe' : 'none'}
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={9}
+        style={{ transition: 'all 0.25s' }}
       />
     </svg>
   )

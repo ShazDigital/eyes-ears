@@ -111,7 +111,7 @@ const styles = css`
   .dev {
     top: 75%;
     left: -7%;
-    transform: rotate(-32.51deg);
+    transform: rotate(-32.51deg) translateX(15px);
   }
 
   .ux {
@@ -147,7 +147,7 @@ const styles = css`
     @media (min-width: 768px) {
       font-size: 3vw;
       left: 49%;
-      top: 34%;
+      top: 36%;
     }
   }
 
@@ -170,6 +170,8 @@ const styles = css`
     margin: 4% 0 0;
     font-size: 6vw;
     width: 100%;
+    transition: all 0.25s cubic-bezier(0.33, 1, 0.68, 1);
+
     @media (min-width: 768px) {
       font-size: 54px;
     }
@@ -189,11 +191,40 @@ const styles = css`
     width: 50.5%;
   }
 
+  @function textShadow($precision, $size, $color) {
+    $value: null;
+    $offset: 0;
+    $length: $size * (1 / $precision) - 1;
+    @for $i from 0 through $length {
+      $offset: $offset + $precision;
+      $shadow: $offset + px $offset + px $color;
+      $value: append($value, $shadow, comma);
+    }
+    @return $value;
+  }
+
   .soon-img {
     max-height: 309px;
     margin-top: 40px;
     position: relative;
     overflow: hidden;
+    --shadow: #bb9cfe;
+    /* &:hover {
+      .bogue-text {
+        text-shadow: 6px 6px var(--shadow), 5.75px 5.75px var(--shadow),
+          5.5px 5.5px var(--shadow), 5.25px 5.25px var(--shadow),
+          5px 5px var(--shadow), 4.75px 4.75px var(--shadow),
+          4.5px 4.5px var(--shadow), 4.25px 4.25px var(--shadow),
+          4px 4px var(--shadow), 3.75px 3.75px var(--shadow),
+          3.5px 3.5px var(--shadow), 3.25px 3.25px var(--shadow),
+          3px 3px var(--shadow), 2.75px 2.75px var(--shadow),
+          2.5px 2.5px var(--shadow), 2.25px 2.25px var(--shadow),
+          2px 2px var(--shadow), 1.75px 1.75px var(--shadow),
+          1.5px 1.5px var(--shadow), 1.25px 1.25px var(--shadow),
+          1px 1px var(--shadow), 0.75px 0.75px var(--shadow),
+          0.5px 0.5px var(--shadow), 0.25px 0.25px var(--shadow);
+      }
+    } */
   }
 
   .pulse-img {
