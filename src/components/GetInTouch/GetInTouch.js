@@ -8,7 +8,6 @@ const StyledSVG = styled.svg`
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  height: auto;
 `
 
 const StyledP = styled.p`
