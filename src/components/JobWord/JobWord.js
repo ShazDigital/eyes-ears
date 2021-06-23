@@ -4,6 +4,7 @@ import Matter from 'matter-js'
 import Marquee from 'react-fast-marquee'
 const StyledSvg = styled.svg`
   position: absolute;
+  height: auto;
 `
 
 const StyledShapes = styled.div`
