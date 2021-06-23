@@ -69,7 +69,7 @@ const GetInTouch = () => {
         />
       </StyledSVG>
 
-      <img alt="" src="images/get-in-touch-empty.png" />
+      <img alt="" src={'images/get-in-touch-empty.png'} />
     </div>
   )
 }
