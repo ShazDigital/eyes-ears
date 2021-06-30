@@ -14,30 +14,46 @@ const RadarImage = () => {
     gsap.registerPlugin(MorphSVGPlugin)
 
     const circ4Path = MorphSVGPlugin.convertToPath(circ4.current)
-    gsap.to(circ1.current, {
+    const tl = gsap.timeline({ repeat: -1 })
+    tl.to(circ1.current, {
       morphSVG: '#circ2',
       duration: 1,
-      repeat: -1,
+
       ease: 'back',
     })
-    gsap.to(circ2.current, {
-      morphSVG: '#circ3',
-      duration: 1,
-      repeat: -1,
-      ease: 'back',
-    })
-    gsap.to(circ3.current, {
-      morphSVG: '#circ4',
-      duration: 1,
-      repeat: -1,
-      ease: 'back',
-    })
-    gsap.to(circ4Path, {
-      morphSVG: '#circ5',
-      duration: 1,
-      repeat: -1,
-      ease: 'easeInOut',
-    })
+      .to(
+        circ2.current,
+        {
+          morphSVG: '#circ3',
+          duration: 1,
+
+          ease: 'back',
+          delay: '0.04',
+        },
+        '-=0.95'
+      )
+      .to(
+        circ3.current,
+        {
+          morphSVG: '#circ4',
+          duration: 1,
+
+          ease: 'back',
+          delay: '0.08',
+        },
+        '-=0.9'
+      )
+      .to(
+        circ4Path,
+        {
+          morphSVG: '#circ5',
+          duration: 1,
+
+          ease: 'easeInOut',
+          delay: '0.12',
+        },
+        '-=0.85'
+      )
   }, [])
 
   return (
