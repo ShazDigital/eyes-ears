@@ -11,6 +11,7 @@ import { SplitText } from 'gsap/SplitText'
 import { MorphSVGPlugin } from 'gsap/all'
 import JobWord from '../components/JobWord/JobWord'
 import Radar from '../components/Radar/Radar.js'
+import Guitar from '../components/Guitar/Guitar'
 
 const IndexPage = () => {
   useEffect(() => {
@@ -40,13 +41,8 @@ const IndexPage = () => {
         </div>
       </Container>
       <Container maxWidth="lg" className="footer">
-        <div className="pulse-radar-imgs">
-          <div className="pulse-img">
-            <p className="bogue-text">A finger on the pulse</p>
-            <img alt="" src={`images/orange.svg`} />
-          </div>
-          <Radar />
-        </div>
+        <Guitar />
+        <Radar />
         <Grid container direction="row" justify="center" alignItems="center">
           <Grid item xs={12}>
             <a href="thesupply.com" rel="noopener">

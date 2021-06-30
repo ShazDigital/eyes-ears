@@ -235,7 +235,7 @@ const styles = css`
   }
 
   .pulse-radar-imgs {
-    img {
+    svg {
       margin-top: 50px;
       max-width: 100%;
     }
@@ -245,6 +245,8 @@ const styles = css`
     position: relative;
     font-size: 4vw;
     overflow: hidden;
+    margin-top: 50px;
+    max-width: 100%;
   }
 
   .purple-text {
