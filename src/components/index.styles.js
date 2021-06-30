@@ -244,6 +244,7 @@ const styles = css`
   .purple-img-container {
     position: relative;
     font-size: 4vw;
+    overflow: hidden;
   }
 
   .purple-text {

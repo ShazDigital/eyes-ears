@@ -55,7 +55,7 @@ const SineWave = ({ active }) => {
       <polyline
         ref={lineRef}
         stroke={'black'}
-        fill={active ? '#bb9cfe' : 'none'}
+        fill={'none'}
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={9}

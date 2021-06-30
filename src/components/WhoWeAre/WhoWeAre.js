@@ -33,13 +33,6 @@ const StyledSVG = styled.svg`
   top: 40%;
   animation: ${upDown} 2s infinite ease-out;
   animation-delay: ${(props) => props.delay};
-
-  path {
-    transition: fill 0.45s;
-    /* fill: ${(props) => (props.active ? 'white' : 'black')}; */
-    stroke: ${(props) => (props.active ? 'white' : 'none')};
-    stroke-width: 1;
-  }
 `
 
 const WhoWeAre = () => {

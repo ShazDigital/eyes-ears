@@ -8,11 +8,13 @@ import GetInTouch from '../components/GetInTouch/GetInTouch'
 import WhoWeAre from '../components/WhoWeAre/WhoWeAre'
 import { gsap } from 'gsap'
 import { SplitText } from 'gsap/SplitText'
+import { MorphSVGPlugin } from 'gsap/all'
 import JobWord from '../components/JobWord/JobWord'
+import Radar from '../components/Radar/Radar.js'
 
 const IndexPage = () => {
   useEffect(() => {
-    gsap.registerPlugin(SplitText)
+    gsap.registerPlugin(SplitText, MorphSVGPlugin)
   }, [])
   return (
     <div css={styles}>
@@ -43,16 +45,7 @@ const IndexPage = () => {
             <p className="bogue-text">A finger on the pulse</p>
             <img alt="" src={`images/orange.svg`} />
           </div>
-          <div className="purple-img-container">
-            <div className="purple-text">
-              <p className="text-in-img">
-                An <span className="radar">under-the-radar</span> idea brought
-                to you by
-              </p>
-              {/* <img alt="" className="arrow" src={`images/arrow-down.png`} /> */}
-            </div>
-            <img alt="" src={`images/purple.svg`} />
-          </div>
+          <Radar />
         </div>
         <Grid container direction="row" justify="center" alignItems="center">
           <Grid item xs={12}>
