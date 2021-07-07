@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { Container, Grid } from '@material-ui/core'
 import styles from '../components/index.styles'
 import 'normalize.css'
@@ -17,8 +17,23 @@ import TheSupplyLogo from '../components/TheSupplyLogo/TheSupplyLogo'
 import IntroScreen from '../components/IntroScreen/IntroScreen'
 
 const IndexPage = () => {
+  const title = useRef(null)
   useEffect(() => {
     gsap.registerPlugin(SplitText, MorphSVGPlugin, DrawSVGPlugin)
+    let tl = gsap.timeline()
+    const splitText = new SplitText(title.current)
+    gsap.set(splitText.current, { perspective: 400 })
+    tl.from(splitText.chars, {
+      opacity: 0,
+      scale: 0,
+      y: 80,
+      rotationX: 180,
+      transformOrigin: '0% 50% -50',
+      ease: 'back',
+      stagger: 0.01,
+      duration: 0.4,
+      delay: 1.5,
+    })
   }, [])
   return (
     <div css={styles}>
@@ -33,7 +48,7 @@ const IndexPage = () => {
               className="eyes-arrow bounce"
               src={`images/arrow-down.png`}
             />
-            <h2>
+            <h2 ref={title}>
               An <span>experimental new concept </span> we are exploring that
               approaches the talent/recruiting game a bit differently
             </h2>

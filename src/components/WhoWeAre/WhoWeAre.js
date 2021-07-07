@@ -101,7 +101,7 @@ const WhoWeAre = () => {
         Be Patient
       </p>
       <p ref={wtfRef} className="text-in-img are-text">
-        WTF?
+        Coming Soon
       </p>
       <StyledArrowHolder>
         <StyledSVG

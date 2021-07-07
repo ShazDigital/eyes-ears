@@ -12,7 +12,7 @@ const ComingSoon = () => {
       tabIndex={0}
     >
       <SineWave active={active} />
-      <p className="bogue-text">Coming Soon</p>
+      <p className="bogue-text">Finger On The Pulse</p>
       <img alt="" src={`images/soon-blank.svg`} />
     </div>
   )
