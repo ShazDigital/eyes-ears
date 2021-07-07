@@ -8,23 +8,31 @@ import GetInTouch from '../components/GetInTouch/GetInTouch'
 import WhoWeAre from '../components/WhoWeAre/WhoWeAre'
 import { gsap } from 'gsap'
 import { SplitText } from 'gsap/SplitText'
-import { MorphSVGPlugin } from 'gsap/all'
+import { MorphSVGPlugin, DrawSVGPlugin } from 'gsap/all'
 import JobWord from '../components/JobWord/JobWord'
 import Radar from '../components/Radar/Radar.js'
 import Guitar from '../components/Guitar/Guitar'
+import Logo from '../components/Logo/Logo'
+import TheSupplyLogo from '../components/TheSupplyLogo/TheSupplyLogo'
+import IntroScreen from '../components/IntroScreen/IntroScreen'
 
 const IndexPage = () => {
   useEffect(() => {
-    gsap.registerPlugin(SplitText, MorphSVGPlugin)
+    gsap.registerPlugin(SplitText, MorphSVGPlugin, DrawSVGPlugin)
   }, [])
   return (
     <div css={styles}>
+      <IntroScreen />
       <Container maxWidth="lg" className="upper-container">
         <Grid container direction="row" justify="center" alignItems="center">
           <Grid item xs={12}>
-            <img alt="" className="logo" src={`images/eyes-ears.svg`} />
+            <Logo auto={false} />
             <h1 className="eyes-header">Eyes &amp; Ears</h1>
-            <img alt="" className="eyes-arrow" src={`images/arrow-down.png`} />
+            <img
+              alt=""
+              className="eyes-arrow bounce"
+              src={`images/arrow-down.png`}
+            />
             <h2>
               An <span>experimental new concept </span> we are exploring that
               approaches the talent/recruiting game a bit differently
@@ -41,16 +49,12 @@ const IndexPage = () => {
         </div>
       </Container>
       <Container maxWidth="lg" className="footer">
-        <Guitar />
+        {/* <Guitar /> */}
         <Radar />
         <Grid container direction="row" justify="center" alignItems="center">
           <Grid item xs={12}>
             <a href="thesupply.com" rel="noopener">
-              <img
-                alt=""
-                className="footer-logo"
-                src={`images/supply-footer-logo.svg`}
-              />
+              <TheSupplyLogo />
             </a>
           </Grid>
           <Grid item xs={12}>

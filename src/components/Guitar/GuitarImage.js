@@ -37,7 +37,6 @@ const GuitarImage = () => {
     const num = parseInt(el.split('')[el.length - 1])
     switch (num) {
       case 1:
-        console.log('fart')
         playC()
         break
       case 2:

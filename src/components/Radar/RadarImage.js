@@ -74,7 +74,7 @@ const RadarImage = () => {
         y="2.5"
         width="1202"
         height="480"
-        fill="#BB9CFE"
+        fill="#F7941D"
         stroke="black"
         strokeWidth="5"
       />
@@ -92,7 +92,7 @@ const RadarImage = () => {
           y="2.5"
           width="1202"
           height="480"
-          fill="#BB9CFE"
+          fill="#F7941D"
           stroke="black"
           strokeWidth="5"
         />

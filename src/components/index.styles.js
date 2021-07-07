@@ -1,5 +1,21 @@
-import { css } from '@emotion/react'
+import { css, keyframes } from '@emotion/react'
+const bounce = keyframes`
+  from, 20%, 53%, 80%, to {
+    transform: translate3d(0,0,0);
+  }
 
+  40%, 43% {
+    transform: translate3d(0, -20px, 0);
+  }
+
+  70% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-2px,0);
+  }
+`
 const styles = css`
   position: relative;
   text-align: center;
@@ -11,6 +27,17 @@ const styles = css`
   * {
     box-sizing: border-box;
   }
+  *,
+  html,
+  body {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  }
 
   .eyes-header {
     margin-top: 55px;
@@ -19,12 +46,29 @@ const styles = css`
     font-size: 25px;
   }
 
+  .intro {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000000;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .eyes-arrow {
     max-width: 32px;
   }
 
   .upper-container {
     padding-top: 96px;
+  }
+
+  .bounce {
+    animation: ${bounce} 1s ease infinite;
   }
 
   h2 {
