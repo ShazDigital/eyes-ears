@@ -7,13 +7,12 @@ const SineWave = ({ active }) => {
   useEffect(() => {
     const width = svgRef.current.viewBox.baseVal.width
     const amp = 50
-    const freq = 3
     let points = []
     let counter = 0
-    let speed = active ? 4 : 3
     const line = lineRef.current
 
     function setPoints() {
+      const freq = active ? 6 : 3
       let x,
         y,
         step = 0
@@ -21,7 +20,6 @@ const SineWave = ({ active }) => {
       for (x = 0; x <= width; x++) {
         x < width / 2 ? step++ : step--
         y = amp * Math.sin(((x + counter) / 100) * freq)
-        y = active ? y * (step / 250) : y
         points.push(x, y)
       }
 
@@ -29,6 +27,7 @@ const SineWave = ({ active }) => {
     }
 
     function animateWaves() {
+      const speed = active ? 5 : 3
       points = setPoints()
       line.setAttribute('points', points)
       counter += speed

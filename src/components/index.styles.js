@@ -185,26 +185,26 @@ const styles = css`
   .touch-text {
     text-transform: uppercase;
     transform: translate(-50%, -50%) rotate(-26deg);
-    font-size: 6vw;
-    left: 48%;
-    top: 36%;
+    font-size: 5vw;
+    left: 49%;
+    top: 38%;
     @media (min-width: 768px) {
-      font-size: 3vw;
-      left: 49%;
+      font-size: 2.75vw;
+      left: 48%;
       top: 36%;
     }
   }
 
   .are-text {
-    font-size: 6vw;
+    font-size: 5vw;
     left: 0;
     width: 100%;
 
     @media (min-width: 768px) {
-      font-size: 3.65vw;
+      font-size: 3vw;
     }
     @media (min-width: 1200px) {
-      font-size: 48px;
+      font-size: 2.5vw;
     }
   }
 

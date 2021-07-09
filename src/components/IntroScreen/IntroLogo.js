@@ -132,6 +132,7 @@ const IntroLogo = ({ auto }) => {
       xmlns="http://www.w3.org/2000/svg"
       onMouseEnter={() => setActive(true)}
       onMouseLeave={() => setActive(false)}
+      style={{ transform: 'scale(0.8)' }}
     >
       {/* Top eye */}
       <path

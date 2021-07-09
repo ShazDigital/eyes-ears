@@ -23,7 +23,7 @@ const IntroScreen = () => {
     tl.from(introContainer.current, {
       opacity: 0,
       scale: 0.5,
-      duration: 1.05,
+      duration: 0.9,
     }).to(introContainer.current, {
       opacity: 0,
       duration: 0.6,
@@ -31,6 +31,16 @@ const IntroScreen = () => {
   }, [])
   return (
     <div ref={introRef} className="intro">
+      <img
+        src={'images/gradient.jpg'}
+        style={{
+          width: '100%',
+          height: '100%',
+          position: 'absolute',
+          top: 0,
+          left: 0,
+        }}
+      />
       <div ref={introContainer}>
         <IntroLogo auto={true} />
       </div>

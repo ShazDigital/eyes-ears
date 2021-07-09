@@ -204,17 +204,17 @@ const JobWord = () => {
       <Marquee play={true} gradient={false} className="job-word cd">
         Creative Directors &nbsp;
       </Marquee>
-      <Marquee play={true} gradient={false} className="job-word des">
+      <Marquee play={true} speed={25} gradient={false} className="job-word des">
         Designers
       </Marquee>
-      <Marquee play={true} gradient={false} className="job-word pr">
+      <Marquee play={true} speed={25} gradient={false} className="job-word pr">
         Producers
       </Marquee>
-      <Marquee play={true} speed={30} gradient={false} className="job-word dev">
+      <Marquee play={true} speed={20} gradient={false} className="job-word dev">
         Developers
       </Marquee>
-      <Marquee play={true} speed={30} gradient={false} className="job-word ux">
-        User Experience &nbsp;
+      <Marquee play={true} speed={20} gradient={false} className="job-word ux">
+        UX &nbsp; UI &nbsp; Product &nbsp;
       </Marquee>
     </div>
   )

@@ -14,6 +14,8 @@ const RadarImage = () => {
     gsap.registerPlugin(MorphSVGPlugin)
 
     const circ4Path = MorphSVGPlugin.convertToPath(circ4.current)
+    const circ5Path = MorphSVGPlugin.convertToPath(circ5.current)
+
     const tl = gsap.timeline({ repeat: -1 })
     tl.to(circ1.current, {
       morphSVG: '#circ2',
@@ -51,6 +53,17 @@ const RadarImage = () => {
 
           ease: 'easeInOut',
           delay: '0.12',
+        },
+        '-=0.85'
+      )
+      .to(
+        circ5Path,
+        {
+          duration: 1,
+          ease: 'easeInOut',
+          delay: '0.1',
+          opacity: 0,
+          scale: 1.08,
         },
         '-=0.85'
       )
