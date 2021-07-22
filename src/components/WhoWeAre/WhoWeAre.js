@@ -107,7 +107,7 @@ const WhoWeAre = () => {
         <StyledSVG
           id="arrow1"
           active={active}
-          width="74"
+          width="100%"
           height="60%"
           viewBox="0 0 74 233"
           fill="current"
@@ -123,7 +123,7 @@ const WhoWeAre = () => {
         <StyledSVG
           id="arrow2"
           active={active}
-          width="74"
+          width="100%"
           height="60%"
           viewBox="0 0 74 233"
           fill="current"
@@ -139,12 +139,12 @@ const WhoWeAre = () => {
         <StyledSVG
           id="arrow3"
           active={active}
-          width="74"
+          width="100%"
           height="60%"
           viewBox="0 0 74 233"
           fill="current"
           delay="0s"
-          style={{ left: '70%' }}
+          style={{ left: '-34%' }}
           xmlns="http://www.w3.org/2000/svg"
         >
           <path

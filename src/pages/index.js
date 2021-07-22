@@ -48,7 +48,7 @@ const IndexPage = () => {
               className="eyes-arrow bounce"
               src={`images/arrow-down.png`}
             />
-            <h2 ref={title}>
+            <h2 className="main-title" ref={title}>
               An <span>experimental new concept </span> we are exploring that
               approaches the talent/recruiting game a bit differently
             </h2>
@@ -56,10 +56,11 @@ const IndexPage = () => {
         </Grid>
       </Container>
       <Container maxWidth="lg" className="img-container">
-        <JobWord />
+        <JobWord desktop={true} />
         <div className="img-right">
           <GetInTouch />
           <WhoWeAre />
+          <JobWord />
           <ComingSoon />
         </div>
       </Container>

@@ -43,6 +43,10 @@ const GetInTouch = () => {
     }
   }, [active, tween])
 
+  function openPage() {
+    window.open('https://thesupply.com', '_blank').focus()
+  }
+
   return (
     <div
       role="button"
@@ -50,6 +54,7 @@ const GetInTouch = () => {
       tabIndex={0}
       onMouseEnter={() => setActive(true)}
       onMouseLeave={() => setActive(false)}
+      onClick={openPage}
     >
       <StyledP className="text-in-img touch-text">Get in touch</StyledP>
       <StyledSVG

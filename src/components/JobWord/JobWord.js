@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import styled from 'styled-components'
 import Matter from 'matter-js'
 import Marquee from 'react-fast-marquee'
+import clsx from 'clsx'
 const StyledSvg = styled.svg`
   position: absolute;
   height: auto;
@@ -19,7 +20,7 @@ function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms))
 }
 
-const JobWord = () => {
+const JobWord = ({ desktop }) => {
   const shapesRef = useRef(null)
   const wrapperRef = useRef(null)
 
@@ -198,7 +199,10 @@ const JobWord = () => {
     runMatter()
   }, [])
   return (
-    <div className="img-left" ref={shapesRef}>
+    <div
+      className={clsx('img-left', desktop ? 'desktop' : 'mobile')}
+      ref={shapesRef}
+    >
       <img alt="" src={`images/jobs-blank.svg`} ref={wrapperRef} />
       <StyledShapes className="shapes"></StyledShapes>
       <Marquee play={true} gradient={false} className="job-word cd">

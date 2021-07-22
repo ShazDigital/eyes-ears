@@ -124,7 +124,7 @@ const Logo = () => {
       xmlns="http://www.w3.org/2000/svg"
       onMouseEnter={() => setActive(true)}
       onMouseLeave={() => setActive(false)}
-      style={{ transform: 'scale(0.9)' }}
+      className="main-logo"
     >
       {/* Top eye */}
       <path

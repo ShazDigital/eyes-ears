@@ -44,6 +44,9 @@ const styles = css`
     text-transform: uppercase;
     margin-bottom: 25px;
     font-size: 25px;
+    @media (max-width: 768px) {
+      margin-top: 0px;
+    }
   }
 
   .intro {
@@ -53,7 +56,7 @@ const styles = css`
     left: 0;
     top: 0;
     z-index: 1000000;
-    background: black;
+    background: #f5e8e1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,10 +64,23 @@ const styles = css`
 
   .eyes-arrow {
     max-width: 32px;
+    @media (max-width: 768px) {
+      max-width: 16px;
+    }
+  }
+
+  .main-logo {
+    transform: scale(0.9);
+    @media (max-width: 768px) {
+      transform: scale(0.4);
+    }
   }
 
   .upper-container {
     padding-top: 96px;
+    @media (max-width: 768px) {
+      padding-top: 20px;
+    }
   }
 
   .bounce {
@@ -77,6 +93,14 @@ const styles = css`
     margin: 75px auto 75px;
     span {
       font-family: 'Bogue-Bold', Garamond, Baskerville, sans-serif;
+    }
+
+    &.main-title {
+      @media (max-width: 768px) {
+        font-size: 16px;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
     }
   }
 
@@ -106,6 +130,17 @@ const styles = css`
     overflow: hidden;
     @media (min-width: 768px) {
       width: 35.25%;
+    }
+    &.desktop {
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+    &.mobile {
+      margin-top: 20px;
+      @media (min-width: 768px) {
+        display: none;
+      }
     }
     img {
       height: 100%;
@@ -233,6 +268,7 @@ const styles = css`
 
   .touch-img {
     width: 50.5%;
+    cursor: pointer;
   }
 
   @function textShadow($precision, $size, $color) {
@@ -253,22 +289,9 @@ const styles = css`
     position: relative;
     overflow: hidden;
     --shadow: #bb9cfe;
-    /* &:hover {
-      .bogue-text {
-        text-shadow: 6px 6px var(--shadow), 5.75px 5.75px var(--shadow),
-          5.5px 5.5px var(--shadow), 5.25px 5.25px var(--shadow),
-          5px 5px var(--shadow), 4.75px 4.75px var(--shadow),
-          4.5px 4.5px var(--shadow), 4.25px 4.25px var(--shadow),
-          4px 4px var(--shadow), 3.75px 3.75px var(--shadow),
-          3.5px 3.5px var(--shadow), 3.25px 3.25px var(--shadow),
-          3px 3px var(--shadow), 2.75px 2.75px var(--shadow),
-          2.5px 2.5px var(--shadow), 2.25px 2.25px var(--shadow),
-          2px 2px var(--shadow), 1.75px 1.75px var(--shadow),
-          1.5px 1.5px var(--shadow), 1.25px 1.25px var(--shadow),
-          1px 1px var(--shadow), 0.75px 0.75px var(--shadow),
-          0.5px 0.5px var(--shadow), 0.25px 0.25px var(--shadow);
-      }
-    } */
+    @media (max-width: 768px) {
+      margin-top: 20px;
+    }
   }
 
   .pulse-img {
@@ -291,6 +314,9 @@ const styles = css`
     overflow: hidden;
     margin-top: 50px;
     max-width: 100%;
+    @media (max-width: 768px) {
+      margin-top: 20px;
+    }
   }
 
   .purple-text {
@@ -299,7 +325,7 @@ const styles = css`
       margin-top: 0;
       top: 40%;
       width: 100%;
-      font-size: 5.25vw;
+      font-size: 4.25vw;
       margin-left: 50%;
       transform: translateX(-50%);
       padding: 0 20px;
@@ -323,6 +349,10 @@ const styles = css`
       margin-left: -12px;
       @media (min-width: 768px) {
         top: 80%;
+      }
+      @media (max-width: 768px) {
+        width: 12px;
+        height: 20px;
       }
     }
   }
