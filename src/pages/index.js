@@ -21,7 +21,7 @@ const IndexPage = () => {
   useEffect(() => {
     gsap.registerPlugin(SplitText, MorphSVGPlugin, DrawSVGPlugin)
     let tl = gsap.timeline()
-    const splitText = new SplitText(title.current)
+    const splitText = new SplitText(title.current, { linesClass: 'hello'})
     gsap.set(splitText.current, { perspective: 400 })
     tl.from(splitText.chars, {
       opacity: 0,
@@ -32,7 +32,7 @@ const IndexPage = () => {
       ease: 'back',
       stagger: 0.01,
       duration: 0.4,
-      delay: 1.5,
+      delay: 1.5
     })
   }, [])
   return (
@@ -49,12 +49,7 @@ const IndexPage = () => {
               src={`images/arrow-down.png`}
             />
             <h2 className="main-title" ref={title}>
-              An <span>experimental fresh approach </span> to keeping our trusted network aprised of who is free, 
-                who is looking, who is in need of help, and everything inbetween... All of course with a 
-                <span>curated human eye (and ear) </span> on top. Concept is still in <span>brainstorm phase</span>, but getting some good 
-                feedback so far. Want to <span>join the convo</span>, as well as receive updates? Type some thoughts 
-                in here. 
-         
+              An <span>experimental fresh approach </span> to keeping our trusted network aprised of who is free, who is looking, who is in need of help, and everything inbetween... All of course with a <span>curated human eye (and ear) </span> on top. The concept is still in a <span>brainstorm phase</span>, but we are getting some good feedback so far. Want to <span>join the convo</span>, as well as receive updates? Type some thoughts in here. 
             </h2>
           </Grid>
         </Grid>

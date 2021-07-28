@@ -35,6 +35,11 @@ const styles = css`
     }
   }
 
+  .hello {
+    ${'' /* border: 1px solid; */}
+    display: contents !important;
+  }
+
   .no-scroll {
     overflow: hidden;
   }
@@ -98,8 +103,7 @@ const styles = css`
     &.main-title {
       @media (max-width: 768px) {
         font-size: 16px;
-        margin: 0 auto;
-        margin-top: 20px;
+        margin: 20px auto 30px;
       }
     }
   }
