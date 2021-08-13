@@ -50,9 +50,8 @@ const IndexPage = () => {
             />
             <h2 className="main-title" ref={title}>
               A <span>fresh approach </span> 
- to keeping our network aprised of talent movements and client needs.  
-Concept still in brainstorm phase. Want to join the convo, as well as receive updates?  
-  Type some thoughts in <u>here</u>
+ to keeping our network aprised of <span>talent movements and client needs.  </span>
+Concept still in brainstorm phase. Want to <span>join</span> the convo? 
             </h2>
           </Grid>
         </Grid>
