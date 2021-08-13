@@ -49,7 +49,10 @@ const IndexPage = () => {
               src={`images/arrow-down.png`}
             />
             <h2 className="main-title" ref={title}>
-              An <span>experimental fresh approach </span> to keeping our trusted network aprised of who is free, who is looking, who is in need of help, and everything inbetween... All of course with a <span>curated human eye (and ear) </span> on top. The concept is still in a <span>brainstorm phase</span>, but we are getting some good feedback so far. Want to <span>join the convo</span>, as well as receive updates? Type some thoughts in here. 
+              A <span>fresh approach </span> 
+ to keeping our network aprised of talent movements and client needs.  
+Concept still in brainstorm phase. Want to join the convo, as well as receive updates?  
+  Type some thoughts in <u>here</u>
             </h2>
           </Grid>
         </Grid>
